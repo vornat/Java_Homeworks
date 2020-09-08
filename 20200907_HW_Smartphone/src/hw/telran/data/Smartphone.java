@@ -5,7 +5,6 @@ import org.w3c.dom.ls.LSOutput;
 public class Smartphone {
 
     private String brand;
-    private double price;
     private String operatingSystem;
     private double screenSize;
     private int ram;
@@ -25,14 +24,6 @@ public class Smartphone {
         return brand;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public String getOperatingSystem() {
         return operatingSystem;
     }
@@ -43,10 +34,6 @@ public class Smartphone {
 
     public double getScreenSize() {
         return screenSize;
-    }
-
-    public void setScreenSize(double screenSize) {
-        this.screenSize = screenSize;
     }
 
     public int getRam() {
@@ -65,17 +52,6 @@ public class Smartphone {
         this.internalStorage = internalStorage;
     }
 
-    public double getPrice(){
-        price =0;
-        if (brand=="Samsung") {
-            price = 500;
-        } else if (brand=="Apple") {
-            price = 1000;
-        }
-        System.out.println(price);
-        return price;
-    }
-
     @Override
     public String toString() {
         return "Smartphone " + brand +
@@ -84,4 +60,14 @@ public class Smartphone {
                 ", ram=" + ram +
                 ", internalStorage=" + internalStorage;
     }
+
+    public void madeIn(){
+        if (brand=="Samsung") {
+            System.out.println("Made in South Korea");}
+        else if (brand=="Apple") {
+            System.out.println("Made in USA");}
+        else {
+            System.out.println("Made in China");}
+    }
+
 }

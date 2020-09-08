@@ -11,10 +11,9 @@ public class SmartphoneApplication {
 
         System.out.println(smartphone1.getInternalStorage());
         System.out.println(smartphone2);
+        System.out.println(smartphone3);
 
-       smartphone1.getPrice();
-       smartphone2.getPrice();
-       smartphone3.getPrice();
+        smartphone1.madeIn();
 
     }
 }
